@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <style>
+    .box {
+      fill: #f1f1f1;
+      stroke: #666;
+      stroke-width: 1px;
+      rx: 5px;
+      ry: 5px;
+    }
+    .arrow {
+      fill: none;
+      stroke: #555;
+      stroke-width: 2px;
+      marker-end: url(#triangle);
+    }
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    #triangle {
+      fill: #555;
+      stroke: none;
+    }
+  </style>
+
+  <defs>
+    <marker id="triangle" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" />
+    </marker>
+  </defs>
+
+  <!-- Dataset Box -->
+  <rect x="200" y="50" width="200" height="40" class="box"/>
+  <text x="300" y="75" text-anchor="middle">Credit Card Fraud Dataset</text>
+
+  <!-- Model Boxes -->
+  <rect x="100" y="150" width="120" height="40" class="box"/>
+  <text x="160" y="175" text-anchor="middle">Decision Tree</text>
+
+  <rect x="240" y="150" width="120" height="40" class="box"/>
+  <text x="300" y="175" text-anchor="middle">AdaBoost(DT)</text>
+
+  <rect x="380" y="150" width="120" height="40" class="box"/>
+  <text x="440" y="175" text-anchor="middle">XGBoost</text>
+
+  <!-- Voting Classifier Box -->
+  <rect x="240" y="250" width="120" height="60" class="box"/>
+  <text x="300" y="275" text-anchor="middle">Voting Classifier</text>
+  <text x="300" y="295" text-anchor="middle">(Proposed Model)</text>
+
+  <!-- Arrows -->
+  <path d="M 300 90 L 160 150" class="arrow"/>
+  <path d="M 300 90 L 300 150" class="arrow"/>
+  <path d="M 300 90 L 440 150" class="arrow"/>
+  
+  <path d="M 160 190 L 300 250" class="arrow"/>
+  <path d="M 300 190 L 300 250" class="arrow"/>
+  <path d="M 440 190 L 300 250" class="arrow"/>
+</svg>
